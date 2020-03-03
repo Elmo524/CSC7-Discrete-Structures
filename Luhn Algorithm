@@ -1,20 +1,58 @@
 /* 
+
  * File:   main.cpp
+
  * Author: Erick Ardon-Solano
+
  * Created on February 26, 2020, 10:23 AM
+
  * Purpose: Luhn Algorithm
+
  */
 
 #include <iostream>
 #include <iomanip>
-
+#include <ctime>
+#include <cstdlib>
 using namespace std;
 
-/*
- * 
- */
+
 int main(int argc, char** argv) {
 
-    return 0;
-}
+//constants
+    const int MIN_VALUE = 0;    //Minimum number a card can have 
+    const int MAX_VALUE = 9;    //Max number a card can have
+    
+//variables
+    int num_1;
+    int num_2;
+    int num_3;
+    int num_4;
+    int num_5;
+    int num_6;
+    int num_7;
+    int num_8;
+    int num_9;
+    
+// Get the system time
+    unsigned seed = time(0);
+    
+// Seed the random number generator.
+    srand(seed);
+    
+    
+    int num_1 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_2 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_3 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_4 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_5 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_6 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_7 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_8 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_9 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    
+    
 
+    return 0;
+
+}
