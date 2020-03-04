@@ -33,7 +33,8 @@ int main(int argc, char** argv) {
     int num_7;
     int num_8;
     int num_9;
-    int num_10;
+    int sum = 0;
+    int last;
     
 // Get the system time
     unsigned seed = time(0);
@@ -41,32 +42,74 @@ int main(int argc, char** argv) {
 // Seed the random number generator.
     srand(seed);
     
+// assigning the random numbers to variables    
+    num_1  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_2  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_3  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_4  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_5  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_6  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_7  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_8  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    num_9  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
     
-    int num_1  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_2  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_3  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_4  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_5  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_6  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_7  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_8  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_9  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_10 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    
-    cout << setw(3)  << int_1 << setw(6)  << int_2 << setw(9)  << int_3;
-    cout << setw(12) << int_4 << setw(15) << int_5 << setw(18) << int_6;
-    cout << setw(21) << int_7 << setw(3)  << int_8 << setw(24) << int_9;
-    cout << setw(27) << endl;
-    
-    num_2*2 = num_2
+// Display Card Number    
+    cout << "Card Number: ";
+    cout << setw(10) << num_1 << setw(3) << num_2 << setw(3) << num_3;
+    cout << setw(3)  << num_4 << setw(3) << num_5 << setw(3) << num_6;
+    cout << setw(3)  << num_7 << setw(3) << num_8 << setw(3) << num_9;
+    cout << setw(3)  << "x"   << endl;
+
+// Double every other digit    
+    num_2 = num_2*2;
             
-    num_4*2 = num_4
+    num_4 = num_4*2;
             
-    num_6*2 = num_6
+    num_6 = num_6*2;
             
-    num_8*2 = num_8
+    num_8 = num_8*2;
+
+//Display new values    
+    cout << "Double every other: ";
+    cout << setw(3) << num_1 << setw(3) << num_2 << setw(3) << num_3;
+    cout << setw(3) << num_4 << setw(3) << num_5 << setw(3) << num_6;
+    cout << setw(3) << num_7 << setw(3) << num_8 << setw(3) << num_9;
+    cout << setw(3) << "x"   << endl;
+
+// If the new values are greater than or equal to 10 subtract 9
+    if(num_2 >=10){
+     num_2 = num_2 - 9;  
+    }
     
-         
+    if(num_4 >=10){
+     num_4 = num_4 - 9;  
+    }
+    
+    if(num_6 >=10){
+     num_6 = num_6 - 9;
+    }
+    
+    if(num_8 >=10){
+     num_8 = num_8 - 9;  
+    }
+    
+//Find the sum of the new values
+    sum = num_1 + num_2 + num_3 + num_4 + num_5 + num_6 + num_7 + num_8 + num_9;
+    
+//Display the new value with the sum
+    cout << "Sum of digits:";
+    cout << setw(9) << num_1 << setw(3) << num_2 << setw(3) << num_3;
+    cout << setw(3) << num_4 << setw(3) << num_5 << setw(3) << num_6;
+    cout << setw(3) << num_7 << setw(3) << num_8 << setw(3) << num_9;
+    cout << setw(3) << "=" << sum << endl;
+    
+// Getting the last digit
+    last = (sum*9) %10;
+
+// Display Last Digit    
+    cout << "Last Digit: " << last;
+    
+    
 
     return 0;
 
