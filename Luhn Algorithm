@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
     int num_7;
     int num_8;
     int num_9;
+    int num_10;
     
 // Get the system time
     unsigned seed = time(0);
@@ -41,17 +42,31 @@ int main(int argc, char** argv) {
     srand(seed);
     
     
-    int num_1 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_2 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_3 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_4 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_5 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_6 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_7 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_8 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
-    int num_9 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_1  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_2  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_3  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_4  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_5  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_6  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_7  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_8  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_9  = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
+    int num_10 = (rand() % (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
     
+    cout << setw(3)  << int_1 << setw(6)  << int_2 << setw(9)  << int_3;
+    cout << setw(12) << int_4 << setw(15) << int_5 << setw(18) << int_6;
+    cout << setw(21) << int_7 << setw(3)  << int_8 << setw(24) << int_9;
+    cout << setw(27) << endl;
     
+    num_2*2 = num_2
+            
+    num_4*2 = num_4
+            
+    num_6*2 = num_6
+            
+    num_8*2 = num_8
+    
+         
 
     return 0;
 
