@@ -20,8 +20,8 @@ using namespace std;
 int main(int argc, char** argv) {
 
 //constants
-    const int MIN_VALUE = 0;    //Minimum number a card can have 
-    const int MAX_VALUE = 9;    //Max number a card can have
+    const int MIN_VALUE = 0;    //Minimum a value digit on a card can have 
+    const int MAX_VALUE = 9;    //Maximum a value digit on a card can have
     
 //variables
     int num_1;
