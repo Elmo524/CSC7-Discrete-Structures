@@ -1,0 +1,37 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: rcc
+ *
+ * Created on March 9, 2020, 11:14 AM
+ *  logic vs bit
+ */
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    int a,b,c,d;
+    a=b=1;
+    c=d=0;
+    
+    if(a||c++){cout<<"false"<<endl;}
+    cout << c << endl;
+    
+    if(b|d++){cout<<"false"<<endl;}
+    cout << d << endl;
+    
+    return 0;
+}
+
