@@ -1,0 +1,24 @@
+ * File:   main.cpp
+ * Author: Erick Ardon-Solano
+ *
+ * Created on March 9, 2020, 10:01 AM
+ * Purpose: 
+ */
+
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    cout << "p  q ~p ~q p&&q p||q p^q p^q^q p^q^p !(p&&q) !p||!q !(p||q) !p^!q" << endl;
+    
+    
+    
+    return 0;
+}
+
