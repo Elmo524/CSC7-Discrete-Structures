@@ -1,0 +1,113 @@
+
+/* 
+ * File:   XOR_Equivalence.cpp
+ * Author: Erick Ardon-Solano
+ * Created on March 9, 2020, 10:15 AM
+ * Purpose: Truth table
+ */
+
+#include <cstdlib>
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    
+    bool p;
+    bool q;
+    
+    cout << "p " << "q ";
+    cout << "(p&&q)||~(p||q)= !(p^q) ";
+    cout << " (p||q)&&~(p&&q)= p^q" << endl;
+    
+    //define p&q
+    p = true;
+    q = true;
+    
+   if(p==true){
+       cout << "T ";
+   }else(cout << "F ");
+   
+   if(q==true){
+       cout << "T ";
+    }else(cout << "F ");
+            
+   if((p&&q)||~(p||q) == !(p^q)){
+       
+       cout << setw(22) << "T ";
+    }else(cout << setw(22) << "F ");
+    
+   if((p||q)&&~(p&&q) == p^q){
+       
+       cout << setw(23) <<  "T " << endl;
+    }else(cout << setw(23) << "F " << endl);
+    
+    //define q as false
+    q = false;
+    
+   if(p==true){
+       cout << "T ";
+    }else(cout << "F ");
+    
+   if(q==true){
+       cout << "T ";
+    }else(cout << "F ");
+            
+   if((p&&q)||~(p||q) == !(p^q)){
+       
+       cout << setw(22) << "T ";
+    }else(cout << setw(22) << "F ");
+    
+   if((p||q)&&~(p&&q) == p^q){
+       
+       cout << setw(23) <<  "T " << endl;
+    }else(cout << setw(23) << "F " << endl);
+    
+    //Define p&q again
+    p=false;
+    q=true;
+    
+   if(p==true){
+       cout << "T ";
+    }else(cout << "F ");
+   
+   if(q==true){
+       cout << "T ";
+    }else(cout << "F ");
+            
+   if((p&&q)||~(p||q) == !(p^q)){
+       
+       cout << setw(22) << "T ";
+    }else(cout << setw(22) << "F ");
+    
+   if((p||q)&&~(p&&q) == p^q){
+       
+       cout << setw(23) <<  "T " << endl;
+    }else(cout << setw(23) << "F " << endl);
+    
+    q = false;
+    
+   if(p==true){
+       cout << "T ";
+   }else(cout << "F ");
+    
+   if(q==true){
+       cout << "T ";
+   }else(cout << "F ");
+            
+   if((p&&q)||~(p||q) == !(p^q)){
+       
+       cout << setw(22) << "T ";
+   }else(cout << setw(22) << "F ");
+    
+   if((p||q)&&~(p&&q) == p^q){
+       
+       cout << setw(23) <<  "T " << endl;
+   }else(cout << setw(23) << "F " << endl);
+
+    return 0;
+}
+
