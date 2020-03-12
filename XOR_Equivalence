@@ -20,94 +20,180 @@ int main(int argc, char** argv) {
     bool q;
     
     cout << "p " << "q ";
-    cout << "(p&&q)||~(p||q)= !(p^q) ";
-    cout << " (p||q)&&~(p&&q)= p^q" << endl;
+    cout << "(p&&q) ";
+    cout << "(p||q) ";
+    cout << "~(p&&q) ";
+    cout << "3||5 ";
+    cout << "!(p&&q)" << endl;
     
     //define p&q
     p = true;
     q = true;
     
-   if(p==true){
-       cout << "T ";
-   }else(cout << "F ");
-   
-   if(q==true){
-       cout << "T ";
-    }else(cout << "F ");
-            
-   if((p&&q)||~(p||q) == !(p^q)){
-       
-       cout << setw(22) << "T ";
-    }else(cout << setw(22) << "F ");
-    
-   if((p||q)&&~(p&&q) == p^q){
-       
-       cout << setw(23) <<  "T " << endl;
-    }else(cout << setw(23) << "F " << endl);
-    
-    //define q as false
-    q = false;
-    
-   if(p==true){
-       cout << "T ";
-    }else(cout << "F ");
-    
-   if(q==true){
-       cout << "T ";
-    }else(cout << "F ");
-            
-   if((p&&q)||~(p||q) == !(p^q)){
-       
-       cout << setw(22) << "T ";
-    }else(cout << setw(22) << "F ");
-    
-   if((p||q)&&~(p&&q) == p^q){
-       
-       cout << setw(23) <<  "T " << endl;
-    }else(cout << setw(23) << "F " << endl);
-    
-    //Define p&q again
-    p=false;
-    q=true;
-    
-   if(p==true){
+    if(p==true){
        cout << "T ";
     }else(cout << "F ");
    
-   if(q==true){
+    if(q==true){
        cout << "T ";
     }else(cout << "F ");
             
-   if((p&&q)||~(p||q) == !(p^q)){
+    if((p&&q)){
        
-       cout << setw(22) << "T ";
-    }else(cout << setw(22) << "F ");
+       cout << setw(4) << "T ";
+    }else(cout << setw(4) << "F ");
     
-   if((p||q)&&~(p&&q) == p^q){
-       
-       cout << setw(23) <<  "T " << endl;
-    }else(cout << setw(23) << "F " << endl);
+    if(p||q){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+   
+    if(~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q) == !(p^q)){
+       cout << setw(7) << "T " << endl;
+    }else(cout << setw(7) << "F " << endl);
     
     q = false;
     
-   if(p==true){
+    if(p==true){
        cout << "T ";
-   }else(cout << "F ");
-    
-   if(q==true){
+    }else(cout << "F ");
+   
+    if(q==true){
        cout << "T ";
-   }else(cout << "F ");
+    }else(cout << "F ");
             
-   if((p&&q)||~(p||q) == !(p^q)){
+    if((p&&q)){
        
-       cout << setw(22) << "T ";
-   }else(cout << setw(22) << "F ");
+       cout << setw(4) << "T ";
+    }else(cout << setw(4) << "F ");
     
-   if((p||q)&&~(p&&q) == p^q){
+    if(p||q){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+   
+    if(~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q) == !(p^q)){
+       cout << setw(7) << "T " << endl;
+    }else(cout << setw(7) << "F " << endl);
+    
+    p = false;
+    q = true;
+    
+    if(p==true){
+       cout << "T ";
+    }else(cout << "F ");
+   
+    if(q==true){
+       cout << "T ";
+    }else(cout << "F ");
+            
+    if((p&&q)){
        
-       cout << setw(23) <<  "T " << endl;
-   }else(cout << setw(23) << "F " << endl);
+       cout << setw(4) << "T ";
+    }else(cout << setw(4) << "F ");
+    
+    if(p||q){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+   
+    if(~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q) == !(p^q)){
+       cout << setw(7) << "T " << endl;
+    }else(cout << setw(7) << "F " << endl);
+    
+    q = false;
+    
+    if(p==true){
+       cout << "T ";
+    }else(cout << "F ");
+   
+    if(q==true){
+       cout << "T ";
+    }else(cout << "F ");
+            
+    if((p&&q)){
+       
+       cout << setw(4) << "T ";
+    }else(cout << setw(4) << "F ");
+    
+    if(p||q){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+   
+    if(~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p&&q)||~(p||q) == !(p^q)){
+       cout << setw(7) << "T " << endl;
+    }else(cout << setw(7) << "F " << endl);
+    
+    cout << endl;
+    
+    cout << "p " << "q ";
+    cout << "(p||q) ";
+    cout << "(p&&q) ";
+    cout << "~(p||q) ";
+    cout << "3&&5 ";
+    cout << "p&&q" << endl;
+    
+    p = true;
+    q = true;
+    
+    if(p==true){
+       cout << "T ";
+    }else(cout << "F ");
+   
+    if(q==true){
+       cout << "T ";
+    }else(cout << "F ");
+            
+    if((p||q)){
+       
+       cout << setw(4) << "T ";
+    }else(cout << setw(4) << "F ");
+    
+    if(p&&q){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+   
+    if(~(p&&q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p||q)&&~(p&&q)){
+       cout << setw(7) << "T ";
+    }else(cout << setw(7) << "F ");
+    
+    if((p||q)&&~(p&&q) == p&&q){
+       cout << setw(7) << "T " << endl;
+    }else(cout << setw(7) << "F " << endl);
+   
 
     return 0;
 }
-
